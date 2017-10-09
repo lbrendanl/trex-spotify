@@ -3,11 +3,9 @@
 // And the new redirect path for the OAuth flow
 // Should be kept secret
 
-var PORT = 3000;
+var PORT = 3333;
 
-var os = require("os");
-var hostName = os.hostname();
-var redirectUri = "http://" + hostName + ":" + PORT + "/callback";
+var redirectUri = "http://localhost:" + PORT + "/callback";
 
 module.exports = {
  'PORT': PORT,

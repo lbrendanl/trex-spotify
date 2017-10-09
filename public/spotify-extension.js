@@ -6,12 +6,10 @@ var spotifyRequestor;
     $(document).ready(function () {
         if (!SpotifyAuthentication.hasTokens()) {
             console.log("We do not have SpotifyAuthentication tokens available");
-            var redirectToSignIn = function() {
-                console.log("Redirecting to login page");
-                window.location.href = "/login";
-            };
+            window.location.href = "/login";
         } else {
-            console.log("Access token found! " + SpotifyAuthentication.getAccessToken());            
+            console.log("Access token found! " + SpotifyAuthentication.getAccessToken());
+            $('#title').text(SpotifyAuthentication.getAccessToken());            
         }
     });
 })();
