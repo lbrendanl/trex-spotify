@@ -1,4 +1,4 @@
-# SpotifyWDC
+# Spotify Extension
 
 To use, do the following:
 
